@@ -1,0 +1,10 @@
+<h2 class="text-center">Tradutor de palavras Campus Code</h2>
+<div class="panel panel-primary">
+  <div class="panel-heading" style="padding-bottom:20px;">
+    Vizualiar Tradução
+    <%= link_to ('Voltar').html_safe, root_path,:class=>"btn btn-default pull-right"  %>
+  </div>
+    <p class="text-center">
+      A tradução de <b><%=@traducao.texto_ingles%></b> é <b><%=@traducao.texto_portugues%></b>
+    </p>
+</div>

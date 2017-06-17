@@ -1,0 +1,19 @@
+<h2 class="text-center">Tradutor de palavras Campus Code</h2>
+<div class="panel panel-primary">
+  <div class="panel-heading" style="padding-bottom:20px;">
+    Inserir tradução
+    <%= link_to ('Voltar').html_safe, root_path,:class=>"btn btn-default pull-right"  %>
+  </div>
+  <%= form_for(@traducao, url: '/translation') do |f| %>
+    <div class="form-group">
+      <%= f.label :texto_portugues %>
+      <%= f.text_field :texto_portugues, :class=>"form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :texto_ingles %>
+      <%= f.text_field :texto_ingles, :class=>"form-control" %>
+    </div>
+    <%= f.submit "Inserir",:class=>"btn btn-success" %>
+  <% end %>
+
+</div>
